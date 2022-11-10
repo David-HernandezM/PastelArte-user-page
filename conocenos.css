@@ -1,0 +1,252 @@
+header nav .desktop .title {
+    margin: 0 120px 0 0;
+}
+
+.background {
+    overflow-x: hidden;
+}
+
+.background * {
+    margin: 2% 15%;
+}
+
+.info-container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.info-container .message-container {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 2px  gray;
+}
+
+.info-container .message-container .message {
+    height: 80%;
+    width: 70%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.info-container .message-container .message form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-container .message-container .message form .inputBox {
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+}
+
+.info-container .message-container .message form .inputBox input,
+.info-container .message-container .message form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 2px solid #333;
+}
+
+.info-container .message-container .message form .inputBox textarea {
+    height: 40px !important;
+    overflow-y: auto;
+}
+
+.info-container .message-container .message form .inputBox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px p;
+    margin: 15px 0;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.info-container .message-container .message form .inputBox input:focus ~ span,
+.info-container .message-container .message form .inputBox textarea:focus ~ span,
+.info-container .message-container .message form .inputBox input:valid ~ span,
+.info-container .message-container .message form .inputBox textarea:valid ~ span {
+    color: red;
+    font-size: 10px;
+    transform: translateY(-20px);
+}
+
+.info-container .contact-phrase-logo-container {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    flex-direction: column;
+    border-right: solid 2px gray;
+}
+
+.info-container .contact-phrase-logo-container .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+
+.info-container .contact-phrase-logo-container .logo img {
+    width: 25%;
+    margin: 40px 0 0 0;
+}
+
+.info-container .contact-phrase-logo-container .logo h2 {
+    text-align: center;
+    font-size: 20px;
+    margin: auto auto 30px auto;
+}
+
+.info-container .contact-phrase-logo-container .contact-info {
+    width: 80%;
+    height: 70%;
+    margin: 0 auto 30px auto;
+}
+
+.info-container .contact-phrase-logo-container .contact-info p {
+    margin: 0 0 0 20px;
+}
+
+.style-box-elements {
+    display: flex;
+    align-items:center;
+    justify-content:left;
+    padding: 0;
+}
+
+.style-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(106, 194, 194);
+    margin: 0;
+}
+
+.location-container {
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-container .locations {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.location-container .locations div {
+    position: absolute;
+}
+
+.location-container .locations .point1 {
+    top: 240px;
+    left: 150px;
+}
+
+.location-container .locations .point2 {
+    top: 60px;
+    left: 50px;
+}
+
+.location-container .locations .point3 {
+    top: 300px;
+    left: 230px;
+}
+
+
+.location-container .locations .mapa {
+    width: 80%;
+    height: 80%;
+    border-style: outset;
+    border-radius: 10px;
+    margin: 50px 50px 50px 50px;
+}
+
+.points-style {
+    width: 30px;
+}
+
+.location-container .locations-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+}
+
+.location-container .locations-info h2  {
+    margin: -80px 0 20px 0;
+    font-size: 40px;
+}
+
+.location-container .locations-info .location {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.location-container .locations-info .location p {
+    margin: 0 0 0 15px;
+    width: 80%;
+}
+
+.information {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.information .profile span {
+    border-radius: 50%;
+}
+
+.information .profile span:hover img {
+    width: 30px;
+}
+
+.information .profile img {
+    width: 20px;
+}

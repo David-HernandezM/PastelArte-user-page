@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0%;
+    z-index: 200;
+}
+
+header nav {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+header nav .logo {
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+header nav .logo img {
+    width: 60px;
+}
+
+header nav a.a-style {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    transition: all 0.3s ease;
+}
+
+header nav a.a-style:hover {
+    background-color: #06819c;
+    color: white;
+    transition: all .3s ease;
+}
+
+header nav .logo a {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .logo a .home {
+    position: absolute;
+    z-index: 100;
+    height: 55px;
+}
+
+header nav .logo a .home ~ img {
+    z-index: 200;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+header nav .logo a .home ~ img:hover {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+header nav .primary a.a-style:last-child {
+    margin: 0 10px 0 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .primary a img {
+    width: 60px;
+    height: 100%;
+}
+
+header nav .primary a p {
+    position: absolute;
+    margin: 0 0 30px 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header nav a.a-style img:hover{
+    opacity: 0.5;
+    transition: all 0.3 ease;
+}
+
+header nav .desktop .title h1 {
+    margin: 0 0 0 45%;
+    padding: 0;
+    font-style: oblique;
+}
+
+header nav .desktop .table h1 span {
+    font-style: normal !important;
+}
+
+header nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .desktop .primary {
+    display: flex;
+}
+
+.background {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(50deg, #eba102, #c44f86, rgb(192, 138, 194), #00c298, rgb(108, 109, 188));
+    background-size: 400% 300%;
+    background-attachment: fixed;
+    z-index: 100;
+    animation: backgroundGradient 15s ease infinite;
+}
+
+.cake-cards-container {
+    display: flex;
+    margin: 10px 10%;
+}
+
+.card {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    scale: 1;
+    transition: all 0.3s ease;
+}
+
+.card .title.special {
+    margin: -25px 0 0 0;
+}
+
+.card .title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    width: 250px;
+}
+
+.card .cakeImage-price-conainer {
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .cakeImage-price-conainer .price {
+    display: flex;
+    align-items: center;
+}
+
+.card .cakeImage-price-conainer .price .number {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.card .cakeImage-price-conainer .price .currency {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.card .cakeImage img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .features ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: solid 1px rgb(128, 123, 239);
+    background-color: rgb(128, 123, 239);
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: rgb(85, 68, 239);
+    color: white;
+}
+
+@keyframes backgroundGradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}   

@@ -1,0 +1,111 @@
+.progress-cake {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+}
+
+.progress-cake .slice {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: solid 2px rgb(194, 194, 194);
+    border-radius: 0 0 50% 50%;
+    border-left: solid 2px rgb(194, 194, 194);
+    transform: rotate(180deg);
+}
+
+.progress-cake .slice::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 50% 50%;
+    background-color: white;
+    transform: translate(0px, 0px);
+    border-left: solid 2px rgb(194, 194, 194);
+    border-right: solid 2px rgb(194, 194, 194);
+    border-bottom: solid 1px rgb(194, 194, 194);
+}
+
+.progress-cake .slice::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateY(10px);
+    border: solid 5px rgb(194, 194, 194);
+}
+
+.progress-cake .slice .candles {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    top: 40px;
+    z-index: 100;
+}
+
+.progress-cake .slice .candle {
+    height: 70px;
+    width: 30px;
+    background: linear-gradient(50deg, #eba102, #c44f86, rgb(192, 138, 194), #00c298, rgb(108, 109, 188));
+    background-size: 100% 100%;
+    border-radius: 0 0 60% 60%;
+    border: solid 1px  black;
+    position: relative;
+}
+
+.progress-cake .slice .candle .fire {
+    height: 40px;
+    width: 20px;
+    background: linear-gradient(45deg, rgb(226, 121, 28), rgb(234, 214, 64));
+    border-radius: 51% 49% 33% 30% / 71% 74% 17% 17%;
+    position: absolute;
+    top: 80px;
+    margin-left: 5px;
+    transform: rotate(180deg);
+    animation: fire 0.8s ease infinite;
+}
+
+@keyframes fire {
+    0% {
+        border-radius: 51% 49% 33% 30% / 71% 74% 17% 17%;
+    }
+    10% {
+        border-radius: 66% 34% 33% 30% / 71% 74% 17% 17% 
+    }
+    20% {
+        border-radius: 82% 18% 33% 30% / 75% 80% 17% 17% 
+    }
+    30% {
+        border-radius: 92% 8% 33% 30% / 73% 87% 11% 22% 
+    }
+    40% {
+        border-radius: 70% 30% 33% 30% / 78% 70% 11% 15% ;
+    }
+    50% { 
+        border-radius: 51% 49% 33% 30% / 81% 65% 11% 10% ;
+    }
+    60% {
+        border-radius: 34% 65% 33% 30% / 70% 84% 11% 10%;
+    }
+    70% {
+        border-radius: 16% 84% 33% 30% / 89% 73% 11% 10% ;
+    }
+    80% {
+        border-radius: 37% 63% 33% 30% / 67% 89% 11% 10% ;
+    }
+    90% {
+        border-radius: 37% 63% 33% 30% / 67% 89% 11% 10% ;
+    }
+    100% {
+        border-radius: 51% 49% 33% 30% / 71% 74% 17% 17%;
+    }
+}

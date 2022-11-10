@@ -1,0 +1,50 @@
+.background {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(50deg, #eba102, #c44f86, rgb(192, 138, 194), #00c298, rgb(108, 109, 188));
+    background-size: 400% 300%;
+    animation: backgroundGradient 15s ease infinite;
+}
+
+.catalogue-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 5% auto;
+}
+
+.catalogue-table-container .table {
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    margin: -5px auto;
+    align-items: center;
+}
+
+.catalogue-table-container .table:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.catalogue-table-container .table:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.catalogue-table-container .table:hover {
+    height: 500px;
+    padding: 50px 0 0 0;
+    border-radius: 10px;
+    z-index: 200;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+}
+
+.catalogue-table-container .table img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="icon" href="./images/logo/logo_icono.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="desktop">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/Iconos/home.png" alt="home" class="home">
+                        <img src="./images/logo/PastelArte_logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="title">
+                    <h1>Pastel<span>Arte</span></h1>
+                </div>
+                <div class="primary">
+                    <a href="./Conocenos.html" class="a-style">Conocenos</a>
+                    <a href="./carrito.html" class="a-style">
+                        <img src="./images/Iconos/Pastel_icono_compras.png" alt="icono compras">
+                        <p>8</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="background">
+        <div class="buying-data-container">
+            <div class="products-data">
+                <div class="text">
+                    Subtotal: 
+                </div>
+                <div class="elements-price-container">
+                    <p class="elements">(8 pasteles)</p>
+                    <p class="price">$542</p>
+                </div>
+            </div>
+            <div class="buy-button">
+                <a href="./datos.html" class="button">Proceder al pago</a>
+            </div>
+        </div>
+        <section class="cake-cards-container">
+            <div class="cards">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Monstruoso</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_artisticos/pastel3.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">75</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Mediano
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Adornos de fondant
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Con chocolate
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input1">
+                        <label for="extra-ingredients-input1">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox1">
+                                    <label for="adorno-checkBox1">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox1">
+                                    <label for="adornomas-checkBox1">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox1">
+                                    <label for="sabores-checkBox1">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Torre mágica</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_bodas/pastel6.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">60</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Con toque de limon
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Adornos de chantilly
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Grande
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input2">
+                        <label for="extra-ingredients-input2">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox2">
+                                    <label for="adorno-checkBox2">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox2">
+                                    <label for="adornomas-checkBox2">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox2">
+                                    <label for="sabores-checkBox2">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Pastel de mango</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_sencillos/pastel1.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">60</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Mediano
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Relleno con mango
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Con chantilly
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input3">
+                        <label for="extra-ingredients-input3">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox3">
+                                    <label for="adorno-checkBox3">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox3">
+                                    <label for="adornomas-checkBox3">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox3">
+                                    <label for="sabores-checkBox3">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Rosal azul</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_artisticos/pastel2.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">70</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Decoración de fondant
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Mediano
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Decorativo
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input4">
+                        <label for="extra-ingredients-input4">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox4">
+                                    <label for="adorno-checkBox4">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox4">
+                                    <label for="adornomas-checkBox4">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox4">
+                                    <label for="sabores-checkBox4">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Animales</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_infantiles/pastel1.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">80</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Tematica de animales
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Divertido
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    tamaño mediano
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input5">
+                        <label for="extra-ingredients-input5">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox5">
+                                    <label for="adorno-checkBox5">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox5">
+                                    <label for="adornomas-checkBox5">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox5">
+                                    <label for="sabores-checkBox5">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Torre de sabor</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_sencillos/pastel3.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">55</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Mediano
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Con fruta
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Decorado de chantilly
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input6">
+                        <label for="extra-ingredients-input6">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox6">
+                                    <label for="adorno-checkBox6">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox6">
+                                    <label for="adornomas-checkBox6">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox6">
+                                    <label for="sabores-checkBox6">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">Cielo nocturno</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_bodas/pastel3.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">65</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Sencillo pero detallado
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Ligero toque a frutas
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Especial
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input7">
+                        <label for="extra-ingredients-input7">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox7">
+                                    <label for="adorno-checkBox7">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox7">
+                                    <label for="adornomas-checkBox7">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox7">
+                                    <label for="sabores-checkBox7">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="title special">The batman</div>
+                        <div class="cakeImage-price-conainer">
+                            <div class="cakeImage">
+                                <img src="./images/pasteles_infantiles/pastel4.jpg" alt="Pastel">
+                            </div>
+                            <div class="price">
+                                <div class="currency">$</div>
+                                <div class="number">77</div>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Mediano
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Figuras de chocolate
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">Cake</span>
+                                    Sencillo
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions">
+                            <button class="button">Eliminar</button>
+                        </div>
+                    </div>
+                    <div class="ingredients-container">
+                        <input type="checkbox" class="extra-ingredients-input" id="extra-ingredients-input8">
+                        <label for="extra-ingredients-input8">Ingredientes extra</label>
+                        <div class="ingredients">
+                            <ul>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adorno-checkbox" id="adorno-checkBox8">
+                                    <label for="adorno-checkBox8">¿Agregar adorno?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="adornos">
+                                    <input type="checkbox" class="adornomas-checkbox" id="adornomas-checkBox8">
+                                    <label for="adornomas-checkBox8">¿Combinar adornos?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Chispas">Chispas $20</option>
+                                        <option value="Fruta">Fruta $30</option>
+                                        <option value="Caramelo">Caramelos $17</option>
+                                        <option value="Fondant">Fondan $40</option>
+                                        <option value="CremaBatida">Crema batida $19</option>
+                                        <option value="Mazapan">Mazapan $16</option>
+                                        <option value="Ninguno">Ninguno</option>
+                                    </select>
+                                </li>
+                                <li class="sabores">
+                                    <input type="checkbox" class="sabores-checkBox" id="sabores-checkBox8">
+                                    <label for="sabores-checkBox8">¿Combinar sabores?</label>
+                                    <br>
+                                    <select>
+                                        <option value="Cheescake">Cheescake</option>
+                                        <option value="Tresleches">Tres leches</option>
+                                        <option value="Chocolate">Chocolate</option>
+                                        <option value="Hojaldre">Hojaldre</option>
+                                        <option value="Imposible">Imposible</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

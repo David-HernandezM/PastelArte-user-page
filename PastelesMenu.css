@@ -1,0 +1,43 @@
+.background .cake-cards-container {
+    display: flex;
+    margin: 30px 10%;
+}
+
+.background .cake-cards-container .cards {
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.background .cake-cards-container .cards .card {
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(0, 0, 0, 0.2),
+                0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 0 -245px 0;
+}
+
+.background .cake-cards-container .cards .card:last-child {
+    margin: auto;
+}
+
+.background .cake-cards-container .cards .card:hover {
+    transform: translateY(-60px);
+    margin: 10px 0 -60px 0;
+}
+
+.background .cake-cards-container .cards .card:first-child:hover {
+    transform: translateY(0px);
+    margin: 0 0 -2px 0;
+}
+
+.background .cake-cards-container .cards .card:last-child:hover {
+    transform: translateY(-60px);
+    margin: 0;
+}
